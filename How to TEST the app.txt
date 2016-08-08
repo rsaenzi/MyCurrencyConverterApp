@@ -1,4 +1,4 @@
-Instructions to run the test:
+How to TEST the app:
 - This project uses the lastest test framework provided by Apple: XCTest
-- To run the test suite, open XCode an select a simulator with iOS 9.x, select 'Product -> Clean', then select 'Product -> Build', then select 'Product -> Test' to run all the test suite
+- To run the test suite, open XCode an select a simulator with iOS 9.x or newer, select 'Product -> Clean', then select 'Product -> Build', then select 'Product -> Test' to run all the test suite
 - Some UI test will fail if the option 'Hardware -> Keyboard -> Toggle Software Keyboard' is not active in Simulator, so make sure this option is enable before run the test suite

@@ -1,0 +1,5 @@
+How to RUN the app:
+- This project was made using XCode 7.3.1, using Swift 2.0 as programming language
+- Before open the project in XCode, please install CocoaPods (https://cocoapods.org/), then run 'pod install' command in project's folder to download all dependencies
+- Important: Open the 'MyCurrencyConverterApp.xcworkspace' file with XCode (Not the 'MyCurrencyConverterApp.xcodeproj' file...)
+- Select a Simulator or Device with iOS 8.x or newer, select 'Product -> Clean', then select 'Product -> Build', finally select 'Product -> Run'
