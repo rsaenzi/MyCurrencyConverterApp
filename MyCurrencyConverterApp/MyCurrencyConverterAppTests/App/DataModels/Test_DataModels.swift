@@ -3,7 +3,7 @@
 //  MyCurrencyConverterApp
 //
 //  Created by Rigoberto Sáenz Imbacuán on 8/7/16.
-//  Copyright © 2016 Rigoberto Sáenz Imbacuán. All rights reserved.
+//  Copyright © 2016 Rigoberto Sáenz Imbacuán [https://www.linkedin.com/in/rsaenzi]. All rights reserved.
 //
 
 import XCTest
@@ -20,6 +20,15 @@ class Test_DataModels: XCTestCase {
         for _ in 0...10 {
             XCTAssertNil(DataModels.getUniqueInstance())
         }
+    }
+    
+    func test_doStart(){
+        
+        // Call the doStart() method
+        CurrencyConverter.app.model.doStart()
+        
+        // After that, the currencies array must have 31 entries
+        XCTAssert(CurrencyConverter.app.model.currencies.count == 31)
     }
     
 }

@@ -3,7 +3,7 @@
 //  MyCurrencyConverterAppUITests
 //
 //  Created by Rigoberto Sáenz Imbacuán on 8/5/16.
-//  Copyright © 2016 Rigoberto Sáenz Imbacuán. All rights reserved.
+//  Copyright © 2016 Rigoberto Sáenz Imbacuán [https://www.linkedin.com/in/rsaenzi]. All rights reserved.
 //
 
 import XCTest
@@ -18,6 +18,9 @@ class FunctionalTest: XCTestCase {
     
     override func setUp() {
         super.setUp()
+        
+        // Print a warning about the keyboard
+        print("If you are going to run the UI test on Simulator, please activate the option 'Toggle Software Keyboard', otherwise must of the test will fail..")
         
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
@@ -113,6 +116,9 @@ class FunctionalTest: XCTestCase {
         app.tables.element.cells["THB"].tap()
         app.tables.element.cells["TRY"].tap()
         app.tables.element.cells["ZAR"].tap()
+        
+        // All cells are displayed correctly
+        XCTAssert(true)
     }
     
 }

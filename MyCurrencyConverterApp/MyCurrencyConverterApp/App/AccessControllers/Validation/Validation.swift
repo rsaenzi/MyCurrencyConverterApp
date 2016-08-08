@@ -3,7 +3,7 @@
 //  MyCurrencyConverterApp
 //
 //  Created by Rigoberto Sáenz Imbacuán on 8/7/16.
-//  Copyright © 2016 Rigoberto Sáenz Imbacuán. All rights reserved.
+//  Copyright © 2016 Rigoberto Sáenz Imbacuán [https://www.linkedin.com/in/rsaenzi]. All rights reserved.
 //
 
 import UIKit
@@ -16,7 +16,7 @@ class Validation {
     
     private let numericChars = "0123456789"
     
-    func isStringOnlyNumeric(stringToTest: String) -> Bool {
+    func isNotEmptyNumericString(stringToTest: String) -> Bool {
         if stringToTest.characters.count > 0 && testCharset(stringToTest, charset: numericChars) == true {
             return true
         }else {

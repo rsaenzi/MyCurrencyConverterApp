@@ -3,7 +3,7 @@
 //  MyCurrencyConverterApp
 //
 //  Created by Rigoberto Sáenz Imbacuán on 8/6/16.
-//  Copyright © 2016 Rigoberto Sáenz Imbacuán. All rights reserved.
+//  Copyright © 2016 Rigoberto Sáenz Imbacuán [https://www.linkedin.com/in/rsaenzi]. All rights reserved.
 //
 
 class BusinessRules {

@@ -3,7 +3,7 @@
 //  MyCurrencyConverterApp
 //
 //  Created by Rigoberto Sáenz Imbacuán on 8/5/16.
-//  Copyright © 2016 Rigoberto Sáenz Imbacuán. All rights reserved.
+//  Copyright © 2016 Rigoberto Sáenz Imbacuán [https://www.linkedin.com/in/rsaenzi]. All rights reserved.
 //
 
 import UIKit
@@ -52,7 +52,7 @@ class ScreenConverter: UIViewController, UITableViewDelegate, UITableViewDataSou
         }
         
         // Check if textfield input is a valid number
-        if CurrencyConverter.app.control.valid.isStringOnlyNumeric(textfieldDollars.text!) == true {
+        if CurrencyConverter.app.control.valid.isNotEmptyNumericString(textfieldDollars.text!) == true {
             
             // Saves the new amount of dollars
             self.validDollarsValue = Float(textfieldDollars.text!)!
@@ -189,7 +189,7 @@ class ScreenConverter: UIViewController, UITableViewDelegate, UITableViewDataSou
                 }else{
                     
                     // We only allow the user to enter numbers...
-                    return CurrencyConverter.app.control.valid.isStringOnlyNumeric(string)
+                    return CurrencyConverter.app.control.valid.isNotEmptyNumericString(string)
                 }
             }
         }

@@ -3,7 +3,7 @@
 //  MyCurrencyConverterApp
 //
 //  Created by Rigoberto Sáenz Imbacuán on 8/6/16.
-//  Copyright © 2016 Rigoberto Sáenz Imbacuán. All rights reserved.
+//  Copyright © 2016 Rigoberto Sáenz Imbacuán [https://www.linkedin.com/in/rsaenzi]. All rights reserved.
 //
 
 typealias callbackSuccessRuleResponse = () -> ()
@@ -13,6 +13,8 @@ class RuleGetExchangeRates {
     // --------------------------------------------------
     // Methods: Public Interface
     // --------------------------------------------------
+    
+    private let errorMessage = "An error has occurred... Please verify your Internet connection and try again later..."
     
     func executeRule(screen: ScreenConverter, callback: callbackSuccessRuleResponse){
         
@@ -35,11 +37,11 @@ class RuleGetExchangeRates {
                 
             // Standard Errors
             default:
-                CurrencyConverter.app.view.showSimpleAlert(screen, message: "An error has occurred... Please verify your Internet connection and try again later...")
+                CurrencyConverter.app.view.showSimpleAlert(screen, message: self.errorMessage)
             }
             
         }) { (httpCode, nsError, errorDescription) in
-            CurrencyConverter.app.view.showSimpleAlert(screen, message: "An error has occurred... Please verify your Internet connection and try again later...")
+            CurrencyConverter.app.view.showSimpleAlert(screen, message: self.errorMessage)
         }
     }
     

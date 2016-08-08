@@ -3,7 +3,7 @@
 //  MyCurrencyConverterApp
 //
 //  Created by Rigoberto Sáenz Imbacuán on 8/6/16.
-//  Copyright © 2016 Rigoberto Sáenz Imbacuán. All rights reserved.
+//  Copyright © 2016 Rigoberto Sáenz Imbacuán [https://www.linkedin.com/in/rsaenzi]. All rights reserved.
 //
 
 class DataModels {
@@ -22,6 +22,7 @@ class DataModels {
     func doStart(){
         
         // Add all currencies
+        currencies.removeAll()
         currencies.append(Currency(code: eCurrencyCode.BritishPound))
         currencies.append(Currency(code: eCurrencyCode.Euro))
         currencies.append(Currency(code: eCurrencyCode.JapaneseYen))
