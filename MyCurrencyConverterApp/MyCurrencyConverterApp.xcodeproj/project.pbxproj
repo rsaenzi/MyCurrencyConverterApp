@@ -599,7 +599,6 @@
 				TargetAttributes = {
 					B112C4D61D54551A001F18A6 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 6LJ5TQDQZS;
 					};
 					B112C4EA1D54551A001F18A6 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -976,7 +975,7 @@
 				INFOPLIST_FILE = MyCurrencyConverterApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.payulatam.payuwallet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rigobertosaenz.converter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -990,7 +989,7 @@
 				INFOPLIST_FILE = MyCurrencyConverterApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.payulatam.payuwallet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rigobertosaenz.converter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
